@@ -1,5 +1,11 @@
 # live_gpui
 
+[![License: MIT](https://img.shields.io/github/license/mattneel/live_gpui)](LICENSE)
+[![Elixir 1.20](https://img.shields.io/badge/Elixir-1.20-4B275F?logo=elixir&logoColor=white)](https://elixir-lang.org)
+[![OTP 28](https://img.shields.io/badge/OTP-28-A90533?logo=erlang&logoColor=white)](https://www.erlang.org)
+[![GPUI 0.2.2](https://img.shields.io/badge/GPUI-0.2.2-1F425F)](https://gpui.rs)
+[![Rust 1.97](https://img.shields.io/badge/Rust-1.97-000000?logo=rust&logoColor=white)](https://www.rust-lang.org)
+
 **Elixir owns the application. GPUI owns the interaction. Rustler connects them.**
 
 A native desktop target with familiar LiveView callbacks, a Phoenix socket, and an explicit `~G` template language. It renders GPUI elements, not HTML. This is callback compatibility, **not** a Phoenix channel, HEEx renderer, or adapter for Phoenix's browser diff protocol. Arbitrary web LiveViews do not run unchanged.
@@ -141,3 +147,7 @@ The Elixir suite covers native compilation, keyed tree transitions, and bounded 
 - [Rustler OwnedEnv](https://docs.rs/rustler/0.38.0/rustler/env/struct.OwnedEnv.html) for asynchronous native-thread messaging.
 - [Phoenix LiveView's template engine](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.Engine.html): its rendered/diff contract is not a native control tree.
 - [elixir-crab/gpui](https://github.com/elixir-crab/gpui): relevant prior art, not an API or implementation dependency of this project.
+
+## License
+
+[MIT](LICENSE) © 2026 Matt Neel. The vendored `native/vendor/zed-xim` retains its upstream MIT license.
