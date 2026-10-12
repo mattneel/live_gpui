@@ -10,6 +10,9 @@
 
 A native desktop target with familiar LiveView callbacks, a Phoenix socket, and an explicit `~G` template language. It renders GPUI elements, not HTML. This is callback compatibility, **not** a Phoenix channel, HEEx renderer, or adapter for Phoenix's browser diff protocol. Arbitrary web LiveViews do not run unchanged.
 
+> [!NOTE]
+> Unless you really need something LiveView shaped for now, I would probably use [`gpui`](https://gpui.hexdocs.pm/) instead.
+
 ## Run the proof
 
 Requires Elixir 1.20, OTP 28, Rust, and a working desktop display. Development is verified on x86-64 GNU/Linux/X11 using Rust 1.97 and Mesa Lavapipe. macOS and Windows are not runtime-validated here; the separate host executable owns its process main thread on every platform.
