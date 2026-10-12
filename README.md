@@ -27,6 +27,8 @@ Mix builds both the Rustler library and `live_gpui_host`, placing them in `priv/
 
 The demo has a single-line text editor, a keyed list of editors, reorder/add/remove actions, a five-second CPU-bound Elixir callback, and a view-restart action. Static text and action rows wrap to the available width; single-line editors clip and scroll horizontally to keep the caret visible.
 
+![The demo window, captured live from the running native host](docs/images/demo-window.png)
+
 ## A native view
 
 ```elixir
