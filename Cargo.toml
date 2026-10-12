@@ -1,0 +1,14 @@
+[workspace]
+members = ["native/live_gpui_protocol", "native/live_gpui_native", "native/live_gpui_host"]
+exclude = ["native/vendor/zed-xim"]
+resolver = "2"
+
+[profile.dev]
+debug = 0
+
+[profile.release]
+opt-level = 2
+lto = "thin"
+
+[patch.crates-io]
+zed-xim = { path = "native/vendor/zed-xim" }

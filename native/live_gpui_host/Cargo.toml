@@ -1,0 +1,14 @@
+[package]
+name = "live_gpui_host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gpui = "=0.2.2"
+live_gpui_protocol = { path = "../live_gpui_protocol" }
+serde_json = "1"
+unicode-segmentation = "1"
+parking_lot = "0.12"
+async-channel = "2"
+# zed-async-tar's xattr 0.2.3 requires the Linux ENOATTR alias removed in libc 0.2.190.
+libc = "=0.2.186"
