@@ -9,7 +9,8 @@ defmodule LiveGpui.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       dialyzer: [plt_add_apps: [:ex_unit]],
-      aliases: aliases()
+      aliases: aliases(),
+      usage_rules: [file: "AGENTS.md", usage_rules: :all]
     ]
   end
 
@@ -29,6 +30,7 @@ defmodule LiveGpui.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:usage_rules, "~> 1.0", only: [:dev]},
       {:ex_slop, "~> 0.4", only: [:dev, :test], runtime: false},
       {:reach, "~> 2.0", only: [:dev, :test], runtime: false},
       {:ex_dna, "~> 1.0", only: [:dev, :test], runtime: false},
